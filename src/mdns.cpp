@@ -4,7 +4,7 @@
 #include <memory>
 #include <thread>
 
-#include "mdns.h"
+#include "mdns_cpp/c/mdns.h"
 #include "mdns_cpp/logger.hpp"
 #include "mdns_cpp/macros.hpp"
 #include "mdns_cpp/utils.hpp"
@@ -17,7 +17,7 @@
 #include <netinet/in.h>
 #endif
 #include <string.h>
-
+#include <chrono>
 namespace mdns_cpp {
 
 static mdns_record_txt_t txtbuffer[128];

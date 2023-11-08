@@ -44,7 +44,7 @@ class mDNS {
   uint32_t service_address_ipv4_{0};
   uint8_t service_address_ipv6_[16]{0};
 
-  std::thread worker_thread_;
+  std::jthread worker_thread_;
 };
 
 }  // namespace mdns_cpp
